@@ -1,0 +1,64 @@
+.footprint-trail{
+    position:absolute;
+    width:120px;
+    height:180px;
+    pointer-events:none;
+    z-index:20;
+}
+
+.footprint{
+    position:absolute;
+    width:18px;
+    height:18px;
+    opacity:.95;
+}
+
+/* First connector */
+
+.trail-1{
+    top:520px;
+    right:170px;
+}
+
+/* Second */
+
+.trail-2{
+  top: 1450px;
+  left: 130px;
+  transform: rotate(-10deg);
+}
+
+/* Third */
+
+.trail-3{
+    top:1880px;
+    right:180px;
+}
+
+/* Fourth */
+
+.trail-4{
+    top:2515px;
+    left:120px;
+}
+
+/* Fifth */
+
+.trail-5{
+    top:3582px;
+    right:160px;
+}
+
+/* Sixth */
+
+.trail-6{
+    top:4200px;
+    left:110px;
+}
+
+/* Seventh */
+
+.trail-7{
+    top:4950px;
+    right:180px;
+}

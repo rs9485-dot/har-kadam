@@ -1,0 +1,267 @@
+.featured {
+  padding: 70px 0;
+  background: #fff;
+}
+
+/* ===========================
+   TOP SECTION
+=========================== */
+
+.featured__split {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.08);
+}
+
+.featured__left {
+  background: linear-gradient(135deg, #4CAF50 0%, #66BB6A 100%);
+  padding: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ===========================
+   HEADLINE (Reduced Size)
+=========================== */
+
+.featured__heading {
+  margin: 0;
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 2.15rem;      /* Reduced from 2.7rem */
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.3px;
+  color: #ffffff;
+  text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.18);
+}
+
+.featured__highlight {
+  display: inline-block;
+  color: #FFE082;
+  font-style: normal;
+  font-weight: 800;
+  position: relative;
+}
+
+.featured__highlight::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background: #FFE082;
+  border-radius: 20px;
+}
+
+/* ===========================
+   LEFT TEXT
+=========================== */
+
+.featured__subtext {
+  margin: 18px 0 16px;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.92);
+  max-width: 520px;
+}
+
+.featured__text {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.95);
+  max-width: 560px;
+}
+
+/* ===========================
+   RIGHT IMAGE
+=========================== */
+
+.featured__right {
+  position: relative;
+  overflow: hidden;
+  min-height: 420px;
+}
+
+.featured__poster-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.featured__poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featured__poster-overlay {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.featured__poster-tag {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #E91E63;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.featured__poster-title {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1.25;
+  color: #fff;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, .35);
+}
+
+.featured__poster-title strong {
+  color: #FFD54F;
+}
+
+/* ===========================
+   CAROUSEL
+=========================== */
+
+.featured__carousel-wrap {
+  max-width: 1180px;
+  margin: 36px auto 0;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.featured__carousel-viewport {
+  flex: 1;
+  overflow: hidden;
+}
+
+.featured__carousel-track {
+  display: flex;
+  transition: transform .35s ease;
+}
+
+.featured__thumb {
+  flex: 0 0 20%;
+  padding: 0 8px;
+}
+
+.featured__thumb img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.featured__thumb img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, .18);
+}
+
+.featured__nav {
+  width: 46px;
+  height: 46px;
+  border: none;
+  border-radius: 50%;
+  background: #F58220;
+  color: #fff;
+  font-size: 1.6rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .25s ease;
+}
+
+.featured__nav:hover:not(:disabled) {
+  background: #E56F12;
+  transform: scale(1.05);
+}
+
+.featured__nav:disabled {
+  opacity: .35;
+  cursor: not-allowed;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 992px) {
+
+  .featured {
+    padding: 50px 20px;
+  }
+
+  .featured__split {
+    grid-template-columns: 1fr;
+  }
+
+  .featured__left {
+    padding: 42px;
+  }
+
+  .featured__heading {
+    font-size: 1.9rem;
+  }
+
+  .featured__right {
+    min-height: 360px;
+  }
+
+  .featured__thumb {
+    flex: 0 0 33.333%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .featured__left {
+    padding: 32px 24px;
+  }
+
+  .featured__heading {
+    font-size: 1.6rem;
+    line-height: 1.25;
+  }
+
+  .featured__subtext {
+    font-size: .95rem;
+  }
+
+  .featured__text {
+    font-size: .78rem;
+    line-height: 1.5;
+  }
+
+  .featured__poster-title {
+    font-size: 1.5rem;
+  }
+
+  .featured__thumb {
+    flex: 0 0 50%;
+  }
+
+  .featured__carousel-wrap {
+    gap: 8px;
+  }
+
+  .featured__nav {
+    width: 40px;
+    height: 40px;
+  }
+}

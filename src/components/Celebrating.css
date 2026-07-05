@@ -1,0 +1,58 @@
+.celebrating {
+  background: #f2f2f2;
+  padding: 64px 0;
+}
+
+.celebrating__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.celebrating__awards {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 16px;
+  position: relative;
+  min-height: 260px;
+}
+
+.celebrating__trophy {
+  width: 120px;
+  height: auto;
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.12));
+}
+
+.celebrating__trophy--left {
+  transform: rotate(-8deg) translateY(12px);
+}
+
+.celebrating__trophy--right {
+  transform: rotate(6deg);
+  width: 140px;
+}
+
+.celebrating__subtitle {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.celebrating__text {
+  font-size: 0.88rem;
+  color: #777;
+  line-height: 1.75;
+}
+
+@media (max-width: 768px) {
+  .celebrating__inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .celebrating__awards {
+    order: -1;
+  }
+}

@@ -1,0 +1,38 @@
+.logo-intro {
+  padding: 0 20px 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-intro__image {
+  width: 210px;
+  height: auto;
+  display: block;
+  margin: 0 auto 35px;
+}
+
+.logo-intro__text {
+  max-width: 780px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+  color: #777;
+  line-height: 1.75;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .logo-intro {
+    padding: 0 20px 40px;
+  }
+
+  .logo-intro__image {
+    width: 90px;
+    margin: 0 auto 25px;
+  }
+
+  .logo-intro__text {
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,19 @@
+.hero {
+  width: 100%;
+  line-height: 0;
+}
+
+.hero__image {
+  width: 100%;
+  height: auto;
+  min-height: 320px;
+  max-height: 520px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+@media (max-width: 768px) {
+  .hero__image {
+    max-height: 280px;
+  }
+}

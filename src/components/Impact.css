@@ -1,0 +1,112 @@
+/* ===========================
+   IMPACT
+=========================== */
+
+.impact {
+  padding: 110px 0;
+  background: #ffffff;
+}
+
+.impact .section-heading {
+  text-align: center;
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 18px;
+}
+
+.impact .section-subheading {
+  max-width: 760px;
+  margin: 0 auto 70px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* ===========================
+   GRID
+=========================== */
+
+.impact__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px;
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.impact-stat {
+  padding: 34px 0;
+  border-bottom: 1px solid #e5e7eb;
+  transition: all 0.25s ease;
+}
+
+.impact-stat:hover {
+  border-color: #4caf50;
+  transform: translateX(6px);
+}
+
+/* ===========================
+   VALUE
+=========================== */
+
+.impact-stat__value {
+  font-size: 3.3rem;
+  font-weight: 800;
+  color: #2e7d32;
+  line-height: 1;
+  margin-bottom: 14px;
+  letter-spacing: -1px;
+}
+
+/* ===========================
+   TITLE
+=========================== */
+
+.impact-stat__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+/* ===========================
+   DESCRIPTION
+=========================== */
+
+.impact-stat__desc {
+  max-width: 90%;
+  color: #6b7280;
+  font-size: 0.97rem;
+  line-height: 1.75;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 900px) {
+  .impact__grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .impact {
+    padding: 80px 0;
+  }
+
+  .impact .section-heading {
+    font-size: 2.2rem;
+  }
+
+  .impact-stat__value {
+    font-size: 2.7rem;
+  }
+
+  .impact-stat__desc {
+    max-width: 100%;
+  }
+}

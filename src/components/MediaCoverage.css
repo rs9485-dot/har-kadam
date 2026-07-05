@@ -1,0 +1,135 @@
+/* ===========================
+   MEDIA COVERAGE
+=========================== */
+
+.media-coverage {
+  padding: 90px 0;
+  background: #fafafa;
+}
+
+.media-coverage .section-heading {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.media-coverage__intro {
+  max-width: 760px;
+  margin: 0 auto 55px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* ===========================
+   GRID
+=========================== */
+
+.media-coverage__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.media-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 18px;
+
+  border: 1px solid #e5e7eb;
+
+  text-decoration: none;
+  color: inherit;
+
+  transition: all 0.3s ease;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+}
+
+.media-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.10);
+}
+
+/* ===========================
+   BADGE
+=========================== */
+
+.media-card__badge {
+  display: inline-block;
+  align-self: flex-start;
+
+  background: #eef8ef;
+  color: #2e7d32;
+
+  padding: 6px 14px;
+  border-radius: 50px;
+
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+
+  margin-bottom: 22px;
+}
+
+/* ===========================
+   TITLE
+=========================== */
+
+.media-card__title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 18px;
+}
+
+/* ===========================
+   TEXT
+=========================== */
+
+.media-card__text {
+  font-size: 0.96rem;
+  color: #6b7280;
+  line-height: 1.8;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 992px) {
+  .media-coverage__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .media-coverage {
+    padding: 70px 0;
+  }
+
+  .media-coverage__grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .media-card {
+    padding: 26px;
+  }
+
+  .media-card__title {
+    font-size: 1.15rem;
+  }
+
+  .media-card__text {
+    font-size: 0.92rem;
+  }
+}
